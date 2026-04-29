@@ -10,8 +10,9 @@ import google.generativeai as genai
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-TOKEN = "8740450028:AAGsZzWH-LBfKZnv8x9bZaGtckB-_U1Th5o"
-AI_KEY = "AIzaSyBQW9qLIbiuEzPKjLUd97inT2dWv-g_xFg"
+TOKEN = os.environ.get("8740450028:AAGsZzWH-LBfKZnv8x9bZaGtckB-_U1Th5o")
+AI_KEY = os.environ.get("AIzaSyAlx_mFR5A9jto90rTvQmDlFBJ5_bXkqzI")
+
 
 # Настройка ИИ
 genai.configure(api_key=AI_KEY)
